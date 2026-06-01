@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: crawl
+Version: 1.0.0
+Summary: A local web-browsing AI assistant powered by Ollama and DuckDuckGo
+Author: asmbelly
+Requires-Python: >=3.10
+Requires-Dist: ddgs
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: ollama
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

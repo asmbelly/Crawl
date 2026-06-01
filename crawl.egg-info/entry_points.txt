@@ -1,0 +1,2 @@
+[console_scripts]
+crawl = main:run

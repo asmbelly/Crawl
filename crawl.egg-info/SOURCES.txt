@@ -1,0 +1,13 @@
+README.md
+brain.py
+config.py
+main.py
+scraper.py
+search.py
+setup.py
+crawl.egg-info/PKG-INFO
+crawl.egg-info/SOURCES.txt
+crawl.egg-info/dependency_links.txt
+crawl.egg-info/entry_points.txt
+crawl.egg-info/requires.txt
+crawl.egg-info/top_level.txt
