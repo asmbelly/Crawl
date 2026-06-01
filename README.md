@@ -36,6 +36,18 @@ It works by:
 
 ---
 
+## Features
+
+- **Fully local** — everything runs on your machine, nothing is sent to external AI services
+- **No API keys** — no accounts, no subscriptions, no costs
+- **Source citations** — every answer shows exactly where the information came from
+- **Any Ollama model** — swap between gemma3, phi3, llama3.2, mistral, or any other model you have pulled
+- **Configurable** — control result count, page read depth, timeout, and model via `config.py`
+- **Lightweight** — minimal dependencies, runs in any terminal
+- **Windows executable** — no Python required for the pre-built `.exe` release
+
+---
+
 ## Requirements
 
 - **Python 3.10 or newer** — [python.org](https://python.org)
@@ -46,7 +58,17 @@ It works by:
 
 ## Installation
 
-### Step 1 — Install Ollama
+### Option A — Windows Executable (easiest)
+
+1. Download `crawl.exe` from the [latest release](https://github.com/asmbelly/Crawl/releases/latest)
+2. Install [Ollama](https://ollama.com) and pull a model: `ollama pull gemma3`
+3. Run `crawl.exe` from anywhere
+
+---
+
+### Option B — From source
+
+#### Step 1 — Install Ollama
 
 Download and install Ollama from [ollama.com](https://ollama.com), then pull a model:
 
@@ -58,7 +80,7 @@ ollama pull gemma3
 
 ---
 
-### Step 2 — Clone the repo
+#### Step 2 — Clone the repo
 
 ```bash
 git clone https://github.com/asmbelly/crawl
@@ -67,7 +89,7 @@ cd crawl
 
 ---
 
-### Step 3 — Install Crawl as a CLI tool
+#### Step 3 — Install Crawl as a CLI tool
 
 ```bash
 pip install -e .
@@ -81,7 +103,7 @@ crawl
 
 ---
 
-### Alternative — Run directly without installing
+#### Alternative — Run directly without installing
 
 ```bash
 pip install -r requirements.txt
@@ -161,6 +183,40 @@ pip install -r requirements.txt
 
 **No search results**
 > DuckDuckGo occasionally rate-limits requests. Wait a moment and try again.
+
+---
+
+## Contributing
+
+Contributions are welcome. Here's how to get involved:
+
+### Getting started
+
+1. Fork the repo
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/Crawl`
+3. Create a branch: `git checkout -b feature/your-feature-name`
+4. Make your changes
+5. Push and open a pull request against `main`
+
+### What's worth contributing
+
+- Support for additional search backends
+- Better scraping/parsing for specific site types
+- Streaming output as the model generates
+- Config file support (TOML/JSON instead of editing `config.py` directly)
+- Linux/macOS packaging
+- Bug fixes and error handling improvements
+
+### Guidelines
+
+- Keep it local-first — no changes that require external API keys
+- Match the existing code style
+- Test your changes before opening a PR
+- Write a clear PR description explaining what you changed and why
+
+### Reporting bugs
+
+Open an issue with your OS, Python version, Ollama version, and the exact error message.
 
 ---
 
