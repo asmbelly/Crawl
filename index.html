@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crawl — Local Web AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <nav>
+    <span class="nav-logo">CRAWL</span>
+    <a href="https://github.com/asmbelly/Crawl" target="_blank" class="nav-link">GitHub</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-pre">
+      <pre class="ascii">
+   ██████╗██████╗  █████╗ ██╗    ██╗██╗
+  ██╔════╝██╔══██╗██╔══██╗██║    ██║██║
+  ██║     ██████╔╝███████║██║ █╗ ██║██║
+  ██║     ██╔══██╗██╔══██║██║███╗██║██║
+  ╚██████╗██║  ██║██║  ██║╚███╔███╔╝███████╗
+   ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚══╝╚══╝ ╚══════╝</pre>
+    </div>
+    <p class="tagline">A local web-browsing AI assistant.<br><span>No API keys. No cloud. Just answers.</span></p>
+    <div class="hero-actions">
+      <a href="https://github.com/asmbelly/Crawl/raw/main/dist/crawl.exe" class="btn-download" id="dlBtn">
+        <span class="btn-icon">↓</span> Download for Windows
+      </a>
+      <a href="https://github.com/asmbelly/Crawl" target="_blank" class="btn-secondary">View Source</a>
+    </div>
+    <p class="version-note">Windows x64 &nbsp;·&nbsp; Requires <a href="https://ollama.com" target="_blank">Ollama</a></p>
+  </header>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step" style="--i:0">
+        <span class="step-num">01</span>
+        <p>Searches DuckDuckGo for your question</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" style="--i:1">
+        <span class="step-num">02</span>
+        <p>Scrapes and reads the top results</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" style="--i:2">
+        <span class="step-num">03</span>
+        <p>Feeds content into a local Ollama model</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" style="--i:3">
+        <span class="step-num">04</span>
+        <p>Returns a clean, sourced answer in your terminal</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="feat-grid">
+      <div class="feat">
+        <span class="feat-icon">⬡</span>
+        <h3>Fully Local</h3>
+        <p>Runs entirely on your machine. Your queries never leave your computer.</p>
+      </div>
+      <div class="feat">
+        <span class="feat-icon">⬡</span>
+        <h3>No API Keys</h3>
+        <p>No OpenAI. No Anthropic. No subscriptions. Completely free to run.</p>
+      </div>
+      <div class="feat">
+        <span class="feat-icon">⬡</span>
+        <h3>Any Ollama Model</h3>
+        <p>Default is gemma3. Swap to phi3, llama3.2, mistral — whatever fits your hardware.</p>
+      </div>
+      <div class="feat">
+        <span class="feat-icon">⬡</span>
+        <h3>Sourced Answers</h3>
+        <p>Every response shows you exactly where the information came from.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="install">
+    <h2>Quick Start</h2>
+    <div class="install-steps">
+      <div class="install-step">
+        <span class="install-num">1</span>
+        <div>
+          <h3>Install Ollama</h3>
+          <p>Download from <a href="https://ollama.com" target="_blank">ollama.com</a>, then pull a model:</p>
+          <div class="code-block"><code>ollama pull gemma3</code></div>
+        </div>
+      </div>
+      <div class="install-step">
+        <span class="install-num">2</span>
+        <div>
+          <h3>Download Crawl</h3>
+          <p>Grab the Windows executable above and run it — no Python install needed.</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <span class="install-num">3</span>
+        <div>
+          <h3>Ask anything</h3>
+          <div class="code-block"><code>crawl> what is quantum computing?</code></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>MIT License &nbsp;·&nbsp; Built by <a href="https://github.com/asmbelly" target="_blank">asmbelly</a> &nbsp;·&nbsp; Not affiliated with any AI company.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
